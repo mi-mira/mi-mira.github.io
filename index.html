@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="MIRA MI — coming soon...">
+    <title>MIRA MI — coming soon...</title>
+    <style>
+      :root { color-scheme: dark; background: #000; color: #00d1ff; }
+      * { box-sizing: border-box; }
+      body { margin: 0; }
+      main {
+        min-height: 100vh;
+        min-height: 100svh;
+        display: grid;
+        place-content: center;
+        justify-items: center;
+        padding: 24px;
+      }
+      pre {
+        margin: 0;
+        white-space: pre;
+        font-family: "Courier New", Courier, monospace;
+        font-weight: 400;
+        font-size: clamp(16px, 3.5vw, 32px);
+        line-height: 1;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <pre id="title" role="img" aria-label="MIRA MI — coming soon...">┌──────────────────────┐
+│       MIRA MI        │
+│    coming soon...    │
+└──────────────────────┘</pre>
+    </main>
+    <script type="module">
+      import { createTextEffect } from './vendor/tte-js/src/index.js';
+
+      createTextEffect('#title', {
+          effect: 'matrix',
+          duration: 4200,
+          colors: ['#8a5cff', '#00d1ff', '#ffffff'],
+          fontScale: 1,
+          respectReducedMotion: true,
+          seed: 'matrix',
+        });
+    </script>
+  </body>
+</html>
